@@ -3,8 +3,12 @@
  * Author:  Matt Morris
  * Submission Date:  4/21/2020
  *
-	This program takes a 2d array of numbers (1-9) and and a target Sum number. In return it will give you back the original array, however if the 
-	numbers do not consecutively add up the the Target number, they will be replaced with  a 0. It can look for a sum horizontally and vertically. 
+ *Takes a 2d array of Integers ( 1-9 ) and a "Sum Number".
+ *Returns a new array, similiar to the first, however if the numbers do not consecutively add up to the Sum Number, the number will be replaced with a 0. 
+ *Works both vertically and Horizontally, when specified. 
+ *
+ *
+ *
  * Statement of Academic Honesty:
  *
  * The following code represents my own work. I have neither
