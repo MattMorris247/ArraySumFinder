@@ -3,7 +3,6 @@ import java.util.Scanner;
 /*
  * FindTheSums.java
  * Author:  Matt Morris
- * Submission Date:  4/21/2020
  *
  *Takes a 2d array of Integers ( 1-9 ) and a "Sum Number".
  *Returns a new array, similiar to the first, however if the numbers do not consecutively add up to the given Target Sum Number, the number will be replaced with a 0. 
@@ -160,19 +159,11 @@ public class FindTheSums {
 		System.out.print("\n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n\n \n \n \n");
 		System.out.println("Which array would like to run the verticalSums operation on?\n(1) Array1  (2) Array2" );
 		boolean valid = true; 
-		int finalrvsAnswer = 0 ; 
-		while ( valid ){ 
-			int rvsAnswer = input.nextInt() ;
-			
-			if (rvsAnswer != 1 || rvsAnswer != 2 ) { 
-			System.out.println("Invalid number. Please Enter 1 or 2") ; 
-			
-			}
-			else{
-				valid =false ; 
-				finalrvsAnswer = rvsAnswer; 
-			}
-		}
+		int finalrvsAnswer =input.nextInt() ; 
+		valid =false ;
+			 
+
+
 		 
 	
 		if  ( finalrvsAnswer ==1 ) {
@@ -184,6 +175,7 @@ public class FindTheSums {
 			System.out.print("\n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n\n \n \n \n");
 			System.out.println("Running verticalSums with Array1, Target Number: "+numAnswer + "...") ; 
 			System.out.println("Before: \n" + arrayToString(array1)) ; 
+			System.out.println("") ; 
 			System.out.println("After: \n"+ arrayToString(verticalSums(array1, numAnswer)) )  ; 
 			System.out.println("\n \n");
 		}
@@ -196,6 +188,7 @@ public class FindTheSums {
 			System.out.print("\n \n \n \n \n \n \n \n \n \n \n \n\n \n \n \n \n \n \n \n\n \n \n \n");
 			System.out.println("Running verticalSums with Array2, Target Number: "+numAnswer + "...") ; 
 			System.out.println("Before: \n" + arrayToString(array2)) ; 
+			System.out.println("GAB") ; 
 			System.out.println("After: \n"+ arrayToString(verticalSums(array2, numAnswer)) )  ; 
 			System.out.println("\n \n");
 
